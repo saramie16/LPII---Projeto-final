@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carros elétricos</title>
+    <title>Formulário</title>
+    <link rel="stylesheet" type="text/css" href="forms.css">
+    <link rel="stylesheet" type="text/css" href="especulacoes.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" type="text/css" href="tendencias.css">
 </head>
 <body>
 
   <header>
     <nav class="menu">
-        <li> <a href="">Carros</a> </li>
-        <li><a href="">História</a> </li>
-        <li><a href="">F1</a> </li>
+        <li> <a href="index.html">Home</a> </li>
+        <li><a href="historia.html">História</a> </li>
+        <li><a href="">Carros de F1</a> </li>
+        <li><a href="carros.html">Carros de luxo</a> </li>
+        <li><a href="">Carros de filmes</a> </li>
         <li><a href="especulacoes.html">Especulações</a> </li>
     </nav>
 
@@ -27,27 +27,33 @@
         <div class="bar"></div>
     </div>
 
-    <a href="#"></a><img src="imagens/logo.jpeg" id="logo" alt="logo">
+    <a href="index.html"></a><img src="imagens/logo.jpeg" id="logo" alt="logo">
 
 </header>
     
-    <h1>Eletrificação</h1>
+    <div id="formulario">
+        <h2>NOS ENVIE SEU FEEDBACK!</h2>
 
-    <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        Um carro elétrico é um veículo automotivo para transporte de carga e de pessoas com propulsão elétrica. Atualmente, grandes concessionárias como BMW, Volkswagen e Chevrolet já aderiram à tecnologia dos carros elétricos. Entre os cotados para serem os carros do futuro, os elétricos são alguns dos preferidos por serem veículos que não emitem poluentes, como gases nocivos ou ruídos consideráveis. Porém, muitos aspectos precisam ser aprimorados, como o processo de fabricação, que polui o meio ambiente.
-        Os carros elétricos são vantajosos não só por serem sustentáveis, mas também devido ao seu maior desempenho, por exemplo, o alto torque.
-        <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No entanto, há uma contradição a respeito da sustentabilidade do carro elétrico, pois, pensando no conteúdo que sai do escapamento, de fato, ele é sustentável, porém,  se considerarmos de onde virá a energia que abastecerá os veículos elétricos, não é possível apostar em sua sustentabilidade total. Além disso, por serem produzidas por lítio, as empresas do setor ainda não sabem como deve ser feito o descarte da bateria, e acabam por muitas vezes não reciclá-las. Outra desvantagem é o preço nada acessível atualmente, que decorre da matéria prima utilizada na produção do carro. Além disso, não basta fabricar o modelo; é preciso também instalar pontos de recarga.<br>
-        <img src="imagens/eletric.jpg" alt="">
-        <br>Referências:<br>
-        https://www.tecfil.com.br/o-que-esperar-dos-carros-do-futuro/<br>
-        https://www.hyundai.com.br/inovacao-e-tecnologia/Carros-do-futuro-6-tendencias-que-podem-chegar-em-breve.html 
-        <br>https://pt.wikipedia.org/wiki/Carro_el%C3%A9trico 
-    </p>
-
-    <div class="volta">
-      <a href="especulacoes.html">↩Página anterior</a>
-    </div>
+        <div class="formulario">
+            <div class="nome">
+                <label for="nome">Informe o seu nome:</label>
+                <textarea id="txtArea" rows="2" cols="70"></textarea>
+            </div>
+        
+            <div class="email">
+                <label for="email"> Email:</label>
+                <textarea id="texto" rows="2" cols="70"></textarea>
+            </div>
+        
+            <div class="mensagem">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="texto" rows="12" cols="70"></textarea>
+            </div>
+        
+            <div class="Enviar">
+                <button onclick="">Enviar</button>
+            </div>
+        </div>
 
 <footer>
   <div class="social_media">
@@ -81,6 +87,9 @@
       navbar.classList.toggle('active')
   }
 
+  $('.carousel').carousel({
+  interval: 10
+  });
 </script>
 </body>
 
