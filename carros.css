@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+
+  overflow-x: hidden;
+
+}
+
+body{
+  background-color: #1d1d1d;
+  color: #fff;
+}
+
+.right{
+
+  float: right;
+
+}
+
+.left{
+
+  float: left;
+
+}
+
+img{
+
+  width: 30vw;
+
+  border-radius: 10px;
+
+}
+
+.inf-car{
+  
+  width: 70vw;
+  margin: 10VW auto;
+
+}
+
+.inf-car img, .inf-car table{
+  margin: auto;
+}
+
+h1{
+  text-align: center;
+  padding: 5vw;
+}
+
+td{
+  font-size: 2.5vw;
+  border-top: 1px solid #fff;
+  padding: 0 2vw;
+  border-bottom: 1px solid #fff;
+}
+
+
+header {
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    z-index:9999;
+}
+
+header .menu {
+    display: flex;
+    transition: 0.5s ease-in-out;
+}
+
+header .menu li {
+    list-style: none;
+    margin: 0 2vw;
+}
+
+header .menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.7rem;
+}
+
+header .menu li a:hover {
+    opacity: 0.7;
+}
+
+header .navbar .bar {
+    width: 1.7rem;
+    height: 0.2rem;
+    background-color: #fff;
+    margin: 0.3rem;
+    transition: 0.5s ease;
+}
+
+header .navbar {
+    display: none;
+    margin-left: 0.4rem;
+}
+
+main {
+    width: 100vw;
+    height: 200vh;
+    background-color: rgb(214, 214, 214);
+}
+
+/********/
+/*footer*/
+/********/
+
+footer{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+    position: relative;
+}
+
+.social_media{
+    margin-bottom: 2vh;
+}
+
+.bi{
+    margin: 1vw;
+    color: #fff;
+}
+
+.bi:hover{
+    opacity: 0.6;
+}
+
+.equipe_contato > a{
+    text-decoration: none;
+    color: #fff;
+    margin: 2vw;
+    font-size: 0.7rem;
+}
+
+.equipe_contato > a:hover{
+    opacity: 0.7;
+}
+
+#copyright{
+    color: rgb(104, 104, 104);
+    font-size: 0.5rem;
+    position: absolute;
+    bottom: 3vh;
+}
