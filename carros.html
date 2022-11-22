@@ -39,7 +39,7 @@
 
         </div>
 
-        <a href="index.html"></a><img src="imagens/logo.jpeg" id="logo" alt="logo">
+        <img src="imagens/logo.jpeg" id="logo" alt="logo">
 
     </header>
 
@@ -295,7 +295,22 @@
         </div>
         <span id="copyright">© 2022 | CarToday</span>
     </footer>
+    <script>
+
+      const submenu = document.querySelector('.menu')
     
+      const navbar = document.querySelector('.navbar')
+    
+      const abrir_menu = () => {
+    
+          submenu.classList.toggle('active')
+          navbar.classList.toggle('active')
+      }
+    
+      $('.carousel').carousel({
+      interval: 10
+      });
+    </script>
     <scrpt scr="navbar.js"></script>
 
   </body>

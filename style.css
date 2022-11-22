@@ -5,14 +5,14 @@
 body {
  background-color: black;
  margin-top: 0%;
- font-size: 2.5vh;
   }
 
 th{
-  color: aliceblue;
-  font-size: large;
+  color: white;
   text-align: justify;
+  font-size: 2.7vh;
 }
+
 table{
   margin-left: 15%;
   margin-right: 15%;
@@ -21,136 +21,21 @@ table img{
   width: 78%; 
   height: 55%;
   margin-bottom: 6%;
-  }
-
-  @media (max-width: 600px) {
-    header .navbar {
-        display: block;
-    }
-
-    header .menu {
-        top: 8vh;
-        left: 0;
-        position: absolute;
-        width: 100vw;
-        height: 92vh;
-        background-color: #000;
-        justify-content: flex-start;
-        align-items: center;
-        flex-direction: column;
-        left: -100%;
-    }
-
-    header .navbar.active :nth-child(1) {
-        transform: translateY(0.5rem) rotate(45deg);
-    }
-
-    header .navbar.active :nth-child(2) {
-        opacity: 0;
-    }
-
-    header .navbar.active :nth-child(3) {
-        transform: translateY(-0.5rem) rotate(-45deg);
-    }
-
-    header .menu li a {
-        font-size: 1.5rem;
-    }
-
-    header .menu li {
-        margin: 5vh 0;
-    }
-
-    header .menu.active {
-
-        left: 0;
-    }
-}
-footer{
-  width: 100vw;
-  height: 30vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #000;
-  position: relative;
+  padding-left: 5%;
 }
 
-.social_media{
-  margin-bottom: 2vh;
-}
-
-.bi{
-  margin: 1vw;
-  color: #fff;
-}
-
-.bi:hover{
-  opacity: 0.6;
-}
-
-.equipe_contato > a{
-  text-decoration: none;
-  color: #fff;
-  margin: 2vw;
-  font-size: 0.7rem;
-}
-
-.equipe_contato > a:hover{
-  opacity: 0.7;
-}
-
-#copyright{
-  color: rgb(104, 104, 104);
-  font-size: 0.5rem;
-  position: absolute;
-  bottom: 3vh;
-}
-
-@media (max-width: 600px) {
-  header .navbar {
-      display: block;
+@media (max-width: 750px) {
+  table img{ 
+    width: 100%; 
+    margin-bottom: 6%;
   }
-
-  header .menu {
-      top: 8vh;
-      left: 0;
-      position: absolute;
-      width: 100vw;
-      height: 92vh;
-      background-color: #000;
-      justify-content: flex-start;
-      align-items: center;
-      flex-direction: column;
-      left: -100%;
+  table{
+    margin-left: 5%;
+    margin-right: 5%;
   }
-
-  header .navbar.active :nth-child(1) {
-      transform: translateY(0.5rem) rotate(45deg);
+  th{
+    font-size: 2.3vh;
   }
-
-  header .navbar.active :nth-child(2) {
-      opacity: 0;
-  }
-
-  header .navbar.active :nth-child(3) {
-      transform: translateY(-0.5rem) rotate(-45deg);
-  }
-
-  header .menu li a {
-      font-size: 1.5rem;
-  }
-
-  header .menu li {
-      margin: 5vh 0;
-  }
-
-  header .menu.active {
-
-      left: 0;
-  }
-  
 }
 
 

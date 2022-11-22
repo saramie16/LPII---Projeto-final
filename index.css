@@ -133,15 +133,13 @@ body{
 }
 
 .btn-content a{
-  padding: 40%;
+  padding: auto;
   text-decoration: none;
   color: #fff;
   font-size: 4vw;
   transition: 1s ease;
   z-index: 88;
 }
-
-
 
 header {
     height: 8vh;

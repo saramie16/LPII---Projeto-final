@@ -26,6 +26,7 @@
   p{
     text-indent: 20px;
     text-align: justify;
+    font-size: 1.1rem;
   }
   span{
       margin-left: 20px;
@@ -57,7 +58,7 @@
     height: 5%;
   }
   .caminho_hover > a{
-    font-size: 1.4em;
+    font-size: 1.2em;
     text-decoration: none;
     color: white;
     margin: auto;
@@ -86,6 +87,7 @@
     text-align: justify;
     color:var(--cor2);
     font-size: 1.3em;
+    padding-top: 2%;
   }
   
   /* /separacao/ */
@@ -123,7 +125,7 @@
     width: 100%;
     margin-bottom: 10px;
     margin-right: 10px;
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   #parte2{
     
@@ -167,10 +169,12 @@
   #curiosidades ul > li{
     list-style-type: none;
     margin: 10px 0px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-align: justify;
   }
-  
+  *{
+    overflow-x:hidden;
+  }
   /* Reponsividade_Mobile */
   
   @media screen and (max-device-width: 736px){
@@ -179,23 +183,22 @@
       margin: 0;
     }
     
-  
      .flexcolumn{
       flex-direction: column;
       align-items: center;
      }
   
-     #intro > p{
-      font-size:0.7em;
+     p{
+      font-size:1em;
      }
   
      #parte1{
       width: 100%;
-      font-size: 1.6em;
+      font-size: 1.2em;
      }
      #parte2{
       width: 100%;
-      font-size: 1.6em;
+      font-size: 1.1em;
      }
      #foto1{
       width: 100%;
@@ -205,18 +208,12 @@
       margin: 20px auto ;
      }
   
-     #popularizacao >p{
-      font-size:1em;
-     }
      #foto3{
       margin-top: 10px;
       height: 100%;
       width: 50%;
      }
   
-     #atualmente > p{
-      font-size: 1em;
-     }
      h4{
       color: pink;
      }
@@ -237,15 +234,15 @@
      }
   
      #intro > p{
-      font-size:0.9em;
+      font-size:0.8em;
      }
   
      #parte1{
       width: 100%;
-      font-size: 1.2em;
+      font-size: 1em;
      }
      #parte2{
-      font-size: 1.2em;
+      font-size: 1em;
      }
      #foto1{
       width: 80%;
@@ -256,7 +253,7 @@
      }
   
      #popularizacao >p{
-      font-size:1.2em;
+      font-size:1em;
      }
      #foto3{
       margin-top: 10px;
@@ -264,17 +261,17 @@
       width: 35%;
      }
      #atualmente > p{
-      font-size: 0.9em;
+      font-size: 0.8em;
      }
      h4{
-      font-size: 1.4em;
+      font-size: 1.2em;
       color: green;
      }
      h5{
-        font-size: 1.3em;
+        font-size: 1.1em;
      }
      #curiosidades ul li{
-        font-size: 1.2em;
+        font-size: 1em;
      }
   } 
  @media screen and (min-width: 736px) and (max-width: 1150px){
