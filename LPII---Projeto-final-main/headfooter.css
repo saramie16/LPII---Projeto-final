@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+*{
+  font-size: 2.7vh;;
+  font-family: 'Inter', sans-serif;
+}
+
+header {
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+  }
+  header .menu {
+    display: flex;
+    transition: 0.5s ease-in-out;
+  }
+
+  header .menu li {
+    list-style: none;
+    margin: 0 2vw;
+  }
+
+  header .menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.7rem;
+  }
+  
+  header .menu li a:hover {
+    opacity: 0.7;
+    background-color: rgba(0, 25, 109, 0.575);
+  }
+
+  header .navbar .bar {
+    width: 1.7rem;
+    height: 0.2rem;
+    background-color: #fff;
+    margin: 0.3rem;
+    transition: 0.5s ease;
+  }
+
+  header .navbar {
+    display: none;
+    margin-left: 0.4rem;
+  }
+  #logo{
+    width: 13vw;
+    padding-right: 2%;
+  }
+
+  main {
+    width: 100vh;
+    height: 200vh;
+    background-color: rgb(214, 214, 214);
+  }
+  footer{
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+    position: relative;
+}
+.social_media{
+    margin-bottom: 2vh;
+}
+
+.bi{
+    margin: 1vw;
+    color: #fff;
+}
+
+.bi:hover{
+    opacity: 0.6;
+}
+
+.equipe_contato > a{
+    text-decoration: none;
+    color: #fff;
+    margin: 2vw;
+    font-size: 0.7rem;
+}
+
+.equipe_contato > a:hover{
+    opacity: 0.7;
+}
+
+#copyright{
+    color: rgb(104, 104, 104);
+    font-size: 0.5rem;
+    position: absolute;
+    bottom: 3vh;
+}
+
+@media (max-width: 600px) {
+    header .navbar {
+        display: block;
+    }
+
+    header .menu {
+        top: 8vh;
+        left: 0;
+        position: absolute;
+        width: 100vw;
+        height: 92vh;
+        background-color: #000;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        left: -100%;
+    }
+
+    header .navbar.active :nth-child(1) {
+        transform: translateY(0.5rem) rotate(45deg);
+    }
+
+    header .navbar.active :nth-child(2) {
+        opacity: 0;
+    }
+
+    header .navbar.active :nth-child(3) {
+        transform: translateY(-0.5rem) rotate(-45deg);
+    }
+
+    header .menu li a {
+        font-size: 1.5rem;
+    }
+
+    header .menu li {
+        margin: 5vh 0;
+    }
+
+    header .menu.active {
+
+        left: 0;
+    }
+}
+footer{
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000;
+  position: relative;
+}
+
+.social_media{
+  margin-bottom: 2vh;
+}
+
+.bi{
+  margin: 1vw;
+  color: #fff;
+}
+
+.bi:hover{
+  opacity: 0.6;
+}
+
+.equipe_contato > a{
+  text-decoration: none;
+  color: #fff;
+  margin: 2vw;
+  font-size: 0.7rem;
+}
+
+.equipe_contato > a:hover{
+  opacity: 0.7;
+}
+
+#copyright{
+  color: rgb(104, 104, 104);
+  font-size: 0.5rem;
+  position: absolute;
+  bottom: 3vh;
+}
+
+@media (max-width: 600px) {
+  header .navbar {
+      display: block;
+  }
+
+  header .menu {
+      top: 8vh;
+      left: 0;
+      position: absolute;
+      width: 100vw;
+      height: 92vh;
+      background-color: #000;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      left: -100%;
+  }
+
+  header .navbar.active :nth-child(1) {
+      transform: translateY(0.5rem) rotate(45deg);
+  }
+
+  header .navbar.active :nth-child(2) {
+      opacity: 0;
+  }
+
+  header .navbar.active :nth-child(3) {
+      transform: translateY(-0.5rem) rotate(-45deg);
+  }
+
+  header .menu li a {
+      font-size: 1.5rem;
+  }
+
+  header .menu li {
+      margin: 5vh 0;
+  }
+
+  header .menu.active {
+
+      left: 0;
+  }
+  
+}

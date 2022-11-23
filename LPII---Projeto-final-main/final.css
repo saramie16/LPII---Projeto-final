@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+
+  
+header {
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    z-index:9999;
+}
+
+header .menu {
+    display: flex;
+    transition: 0.5s ease-in-out;
+}
+
+header .menu li {
+    list-style: none;
+    margin: 0 2vw;
+}
+
+header .menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.7rem;
+}
+
+header .menu li a:hover {
+    opacity: 0.7;
+}
+
+  :root{
+    --cor1:#1D1D1D;
+    --cor2:white;
+    --fontSizePri:1.6em;
+    --fontSizeSec:1.3em;
+    --fontSizeTri:0.9em;
+  }
+  body{
+    background-color: var(--cor1);
+  }
+  h3{
+    color: white;
+  }
+  h4{
+    margin: 10px 0px;
+    font-size: 1.6em;
+  }
+  h5{
+    font-size: 1.4em;
+    font-weight: 500;
+  }
+  p{
+    text-indent: 20px;
+    text-align: justify;
+  }
+  span{
+      margin-left: 20px;
+    }
+
+  /* #back_image{
+    border: 1px red solid;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  /* #back_image > h1{
+    color: white;
+    position: ;
+  } */
+  
+  /* #carro_fundo{
+    width: 100%;
+    height: 50%;
+    object-fit:cover;
+  } */
+
+  .caminho_hover{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    gap:10px;
+    height: 5%;
+  }
+  .caminho_hover > a{
+    font-size: 1.4em;
+    text-decoration: none;
+    color: white;
+    margin: auto;
+  }
+  .container_caminho > .caminho_hover :hover{
+    opacity: 0.7;
+  }
+  
+  #container_principal{
+   margin: 10px 100px;
+   background-color:rgba(0, 0, 0, 0.281);
+  }
+  .separacaoV{
+    background-color: red;
+    width: 1px;
+    height: 100%;
+  }
+
+  /**/
+  /* /intro*/ 
+  /**/
+  
+  #intro{
+    border:1px black solid;
+    margin: 10px 40px;
+    text-align: justify;
+    color:var(--cor2);
+    font-size: 1.3em;
+  }
+  
+  /* /separacao/ */
+  .separacao{
+    width: 96%;
+    background-color: white;
+    margin: 10px auto;
+    height: 1px;
+  }
+  /*primoridos
+  dividi os 2 textos
+  coloquei os textos e imgagens em flexbox 
+  */
+  .flexbox{
+    display: flex;
+  }
+  #primordios{
+    color:var(--cor2);
+    text-align: left;
+    margin: 10px 40px;
+    font-size: 1em;
+  }
+  #foto1{
+    width:40%;
+    height: 20%;
+    margin: auto;
+  }
+  #foto2{
+    width: 20%;
+    height: 20%;
+    margin: 10px 10px 10px 0px;
+  }
+  #parte1{
+    
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    font-size: 1.2em;
+  }
+  #parte2{
+    
+    width:80%;
+    margin-top: 10px;
+    
+    font-size: 1.2em;
+  }
+  
+  /* /popularizacao/ */
+  
+  #popularizacao{
+   
+    margin: 10px 40px;
+    color:var(--cor2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #popularizacao > p{
+    margin: 10px 0px;
+    font-size: 1.2em;
+  }
+  #foto3{
+    width:15rem;
+    height:300px;
+  }
+  
+  /* /atualmente/ */
+  
+  #atualmente{
+     color: var(--cor2);
+     margin: 0px 40px;
+     font-size: 1.2em;
+  }
+  
+  #curiosidades{
+    color: var(--cor2);
+    margin: 20px 40px;
+  }
+  #curiosidades ul > li{
+    list-style-type: none;
+    margin: 10px 0px;
+    font-size: 1.2em;
+    text-align: justify;
+  }
+  
+  /* Reponsividade_Mobile */
+  
+  @media screen and (max-device-width: 736px){
+  
+    #container_principal{
+      margin: 0;
+    }
+    
+  
+     .flexcolumn{
+      flex-direction: column;
+      align-items: center;
+     }
+  
+     #intro > p{
+      font-size:0.7em;
+     }
+  
+     #parte1{
+      width: 100%;
+      font-size: 1.6em;
+     }
+     #parte2{
+      width: 100%;
+      font-size: 1.6em;
+     }
+     #foto1{
+      width: 100%;
+     }
+     #foto2{
+      height: 100%;
+      margin: 20px auto ;
+     }
+  
+     #popularizacao >p{
+      font-size:1em;
+     }
+     #foto3{
+      margin-top: 10px;
+      height: 100%;
+      width: 50%;
+     }
+  
+     #atualmente > p{
+      font-size: 1em;
+     }
+     h4{
+      color: pink;
+     }
+  }
+  
+  /* Responsividade_PC */
+
+   @media screen and (max-width: 735px){
+  
+    #container_principal{
+      margin: 0;
+    }
+    .container_caminho{
+        display: none;
+    }
+     .flexcolumn{
+      flex-direction: column;
+     }
+  
+     #intro > p{
+      font-size:0.9em;
+     }
+  
+     #parte1{
+      width: 100%;
+      font-size: 1.2em;
+     }
+     #parte2{
+      font-size: 1.2em;
+     }
+     #foto1{
+      width: 80%;
+     }
+     #foto2{
+      width: 35%;
+      margin: auto 20px;
+     }
+  
+     #popularizacao >p{
+      font-size:1.2em;
+     }
+     #foto3{
+      margin-top: 10px;
+      height: 35%;
+      width: 35%;
+     }
+     #atualmente > p{
+      font-size: 0.9em;
+     }
+     h4{
+      font-size: 1.4em;
+      color: green;
+     }
+     h5{
+        font-size: 1.3em;
+     }
+     #curiosidades ul li{
+        font-size: 1.2em;
+     }
+  } 
+ @media screen and (min-width: 736px) and (max-width: 1150px){
+    .flexcolumn{
+      flex-direction: column;
+     }
+     #intro > p{
+        font-size:0.9em;
+    }  
+     #foto1{
+      width: 75%;
+      margin-bottom: 10px;
+     }
+     #foto2{
+      width: 40%;
+      height: 40%;
+      margin: auto 10px;
+     }
+     #parte1{
+        width: 100%;
+        font-size: 1.2em;
+    }
+     #parte2{
+        font-size: 1.1em;
+    }
+    #popularizacao >p{
+        font-size:1em;
+    }
+    #foto3{
+        height: 40%;
+        width: 40%;
+        
+    }
+    #atualmente > p{
+        font-size: 0.9em;
+     
+    }
+    #curiosidades ul li{
+        font-size: 1.1em;
+     }
+     h4{
+      font-size: 1.4em;
+      color: blue;
+     }
+     h5{
+        font-size: 1.3em;
+     }
+    }
