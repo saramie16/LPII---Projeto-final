@@ -26,39 +26,62 @@
   p{
     text-indent: 20px;
     text-align: justify;
-    font-size: 1.1rem;
   }
   span{
       margin-left: 20px;
     }
+    #separar{
+      background-color: white;
+      height: auto;
+      width: 1px;
+    }
+    .fa-arrow-left{
+      color: white;
+      margin-left: 25px;
+    }
+    header{
+      background-color: black;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-bottom: 10px;
+    }
 
-  /* #back_image{
-    border: 1px red solid;
-    background-color: red;
+  
+   #back_image{
+    width: 100%;
+    height: 30%;
+    position: relative;
+    overflow: hidden;
+  }
+   #back_image > h1{
+    color: white;
+    position: absolute;
+    top: 10vh;
+    bottom: 14vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 2.6em;
+    text-align: center;
+    width: 500px;
+  } 
+  #back_image > img{
     width: 100%;
     height: 100%;
-    position: relative;
+    object-fit: cover;
   }
-  /* #back_image > h1{
-    color: white;
-    position: ;
-  } */
   
-  /* #carro_fundo{
-    width: 100%;
-    height: 50%;
-    object-fit:cover;
-  } */
-
+  
   .caminho_hover{
     display: flex;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.281);
     width: 100%;
-    gap:10px;
+    justify-content: space-around;
     height: 5%;
   }
   .caminho_hover > a{
-    font-size: 1.2em;
+    font-size: 1.4em;
     text-decoration: none;
     color: white;
     margin: auto;
@@ -72,22 +95,20 @@
    background-color:rgba(0, 0, 0, 0.281);
   }
   .separacaoV{
-    background-color: red;
+    background-color: white;
     width: 1px;
     height: 100%;
   }
-
+  
   /**/
   /* /intro*/ 
   /**/
   
   #intro{
-    border:1px black solid;
     margin: 10px 40px;
     text-align: justify;
     color:var(--cor2);
     font-size: 1.3em;
-    padding-top: 2%;
   }
   
   /* /separacao/ */
@@ -125,7 +146,7 @@
     width: 100%;
     margin-bottom: 10px;
     margin-right: 10px;
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
   #parte2{
     
@@ -149,6 +170,10 @@
     margin: 10px 0px;
     font-size: 1.2em;
   }
+  #pop{
+      margin-left: 3.5vw;
+      color: white;
+  }
   #foto3{
     width:15rem;
     height:300px;
@@ -169,36 +194,43 @@
   #curiosidades ul > li{
     list-style-type: none;
     margin: 10px 0px;
-    font-size: 1.1em;
+    font-size: 1.2em;
     text-align: justify;
   }
-  *{
-    overflow-x:hidden;
-  }
+  
   /* Reponsividade_Mobile */
   
   @media screen and (max-device-width: 736px){
-  
+    #back_image > h1{
+        top: 10vh;
+        bottom: 14vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-size: 3em;
+      }
     #container_principal{
       margin: 0;
     }
-    
+    .container_caminho{
+        display: none;
+    }
      .flexcolumn{
       flex-direction: column;
       align-items: center;
      }
   
-     p{
-      font-size:1em;
+     #intro > p{
+      font-size:0.7em;
      }
   
      #parte1{
       width: 100%;
-      font-size: 1.2em;
+      font-size: 2em;
      }
      #parte2{
       width: 100%;
-      font-size: 1.1em;
+      font-size: 2em;
      }
      #foto1{
       width: 100%;
@@ -208,23 +240,33 @@
       margin: 20px auto ;
      }
   
+     #popularizacao >p{
+      font-size:1em;
+     }
      #foto3{
       margin-top: 10px;
       height: 100%;
       width: 50%;
      }
   
-     h4{
-      color: pink;
+     #atualmente > p{
+      font-size: 1em;
      }
   }
   
   /* Responsividade_PC */
-
+  
    @media screen and (max-width: 735px){
   
     #container_principal{
       margin: 0;
+    }
+    #back_image > h1{
+      top: 10vh;
+      bottom: 14vh;
+      left: 0;
+      right: 0;
+      margin: auto;
     }
     .container_caminho{
         display: none;
@@ -234,15 +276,15 @@
      }
   
      #intro > p{
-      font-size:0.8em;
+      font-size:0.9em;
      }
   
      #parte1{
       width: 100%;
-      font-size: 1em;
+      font-size: 1.2em;
      }
      #parte2{
-      font-size: 1em;
+      font-size: 1.2em;
      }
      #foto1{
       width: 80%;
@@ -251,30 +293,43 @@
       width: 35%;
       margin: auto 20px;
      }
-  
+     
      #popularizacao >p{
-      font-size:1em;
+      font-size:1.2em;
      }
+     #pop{
+      margin-left: 7vw;
+      color: white;
+  }
      #foto3{
       margin-top: 10px;
       height: 35%;
       width: 35%;
      }
      #atualmente > p{
-      font-size: 0.8em;
+      font-size: 0.9em;
      }
      h4{
-      font-size: 1.2em;
-      color: green;
+      font-size: 1.4em;
      }
      h5{
-        font-size: 1.1em;
+        font-size: 1.3em;
      }
      #curiosidades ul li{
-        font-size: 1em;
+        font-size: 1.2em;
      }
   } 
- @media screen and (min-width: 736px) and (max-width: 1150px){
+  @media screen and (min-width: 736px) and (max-width: 1150px){
+    .caminho_hover > a{
+        font-size: 1.4em;
+      }
+      #back_image > h1{
+        top: 10vh;
+        bottom: 14vh;
+        left: 0;
+        right: 0;
+        margin: auto;
+      } 
     .flexcolumn{
       flex-direction: column;
      }
@@ -300,6 +355,10 @@
     #popularizacao >p{
         font-size:1em;
     }
+    #pop{
+      margin-left: 3.9vw;
+      color: white;
+  }
     #foto3{
         height: 40%;
         width: 40%;
@@ -314,7 +373,6 @@
      }
      h4{
       font-size: 1.4em;
-      color: blue;
      }
      h5{
         font-size: 1.3em;
